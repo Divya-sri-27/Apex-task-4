@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Divya Sri — Unified Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Divya Sri</a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="todo.html" class="nav-link">To‑Do App</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button id="themeToggle" class="btn small" aria-label="Toggle theme">Dark</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section id="home" class="hero card">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1>Hello — I'm <span class="accent">Divya</span></h1>
+          <h2 class="typing" id="typing">Frontend Developer</h2>
+          <p class="lead">I build responsive, accessible, and interactive web applications.</p>
+
+          <div class="cta-row">
+            <a class="btn" href="#projects">See Projects</a>
+            <a class="btn ghost" href="assets/Divya_Sri_Resume.pdf" download>Download Resume</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="assets/images/profile.svg" alt="Profile illustration">
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="card">
+      <h3>About Me</h3>
+      <p class="small">Frontend developer focused on performance, accessibility and polished UI.</p>
+
+      <div class="skills">
+        <div class="skill">
+          <label>HTML</label>
+          <div class="progress"><div class="bar" data-value="95"></div></div>
+        </div>
+
+        <div class="skill">
+          <label>CSS</label>
+          <div class="progress"><div class="bar" data-value="90"></div></div>
+        </div>
+
+        <div class="skill">
+          <label>JavaScript</label>
+          <div class="progress"><div class="bar" data-value="85"></div></div>
+        </div>
+
+        <div class="skill">
+          <label>React (Optional)</label>
+          <div class="progress"><div class="bar" data-value="70"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="card">
+      <h3>Projects</h3>
+      <p class="small">Click a card to see more details.</p>
+
+      <div class="grid projects-grid" id="projectsGrid">
+        <!-- Project cards injected by JS -->
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-row">
+          <input id="name" placeholder="Your name" required>
+          <input id="email" placeholder="Email" type="email" required>
+        </div>
+
+        <div>
+          <input id="subject" placeholder="Subject" required>
+        </div>
+
+        <div>
+          <textarea id="message" placeholder="Message" rows="5" required></textarea>
+        </div>
+
+        <div class="form-row">
+          <button class="btn" type="submit">Send</button>
+          <button id="saveMsg" class="btn ghost" type="button">Save locally</button>
+        </div>
+
+        <div id="formMsg" class="small" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Modal for project details -->
+  <div id="modal" class="modal hidden" role="dialog" aria-hidden="true">
+    <div class="modal-content card">
+      <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container small center">© 2025 Divya Sri</div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products — Unified Site</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Divya Sri</a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="todo.html" class="nav-link">To‑Do</a>
+        <a href="products.html" class="nav-link active">Products</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Product Listing</h2>
+      <p class="small">Filter and sort products by category, price, and rating.</p>
+
+      <div class="controls">
+        <label>Category:
+          <select id="categoryFilter">
+            <option value="all">All</option>
+          </select>
+        </label>
+
+        <label>Sort:
+          <select id="sortSelect">
+            <option value="default">Default</option>
+            <option value="price-asc">Price ↑</option>
+            <option value="price-desc">Price ↓</option>
+            <option value="rating-desc">Rating</option>
+          </select>
+        </label>
+
+        <div style="margin-left:auto" class="small">Products: <span id="count">0</span></div>
+      </div>
+
+      <div id="productList" class="grid" style="margin-top:12px"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container small center">© 2025 Divya Sri</div></footer>
+
+  <script src="assets/js/products.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>To-Do App — Unified Site</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Divya Sri</a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="todo.html" class="nav-link active">To‑Do</a>
+        <a href="products.html" class="nav-link">Products</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>To‑Do / Notes App</h2>
+      <p class="small">Add tasks, edit, delete and keep them saved in your browser.</p>
+
+      <div class="input-row">
+        <input id="taskInput" placeholder="Add a new task or note..." aria-label="Task input">
+        <button id="addBtn" class="btn">Add</button>
+      </div>
+
+      <div style="margin-top:12px" class="flex">
+        <label class="small">Filter:
+          <select id="filterSelect">
+            <option value="all">All</option>
+            <option value="active">Active</option>
+            <option value="done">Done</option>
+          </select>
+        </label>
+
+        <button id="clearAll" class="btn ghost" style="margin-left:auto">Clear All</button>
+      </div>
+
+      <div id="list" class="list" aria-live="polite" style="margin-top:12px"></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container small center">© 2025 Divya Sri</div></footer>
+
+  <script src="assets/js/todo.js"></script>
+</body>
+</html>
